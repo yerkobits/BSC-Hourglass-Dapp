@@ -395,7 +395,7 @@ function updateData() {
     contract.buyPrice(function (e, r) {
         let buyPrice = convertWeiToEth(r);
         globalBuyPrice = convertWeiToEth(r);
-        $('.buy').text(buyPrice.toFixed(6) + ' ');
+        $('.buy').text(buyPrice.toFixed(5) + ' ');
         $('.buy-usd').text('$' + Number((buyPrice * bnbPrice).toFixed(2)).toLocaleString() + ' ' + currency + '');
     });
 
@@ -413,7 +413,7 @@ function updateData() {
 
     contract.sellPrice(function (e, r) {
         let sellPrice = convertWeiToEth(r);
-        $('.sell').text(sellPrice.toFixed(6) + ' ');
+        $('.sell').text(sellPrice.toFixed(5) + ' ');
         $('.sell-usd').text('$' + Number((sellPrice * bnbPrice).toFixed(2)).toLocaleString() + ' ' + currency + '');
     });
 
