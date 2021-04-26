@@ -8,7 +8,7 @@ body {
 
 body {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+    background: linear-gradient(-45deg, rgb(21, 21, 21) 0%, rgb(49, 49, 49) 100%);
 }
 
 table {
