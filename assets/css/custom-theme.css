@@ -116,15 +116,15 @@ table th {
 }
 
 .whiteBorder {
-    border: 3px solid #fff;
+    border: 5px solid #fff;
 }
 
 .orangeBorder {
-    border: 3px solid #ffd033;
+    border: 5px solid #ffd033;
 }
 
 .darkBorder {
-    border: 3px solid #343434;
+    border: 5px solid #343434;
 }
 
 /* Rounded Corner FX */
