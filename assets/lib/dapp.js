@@ -77,18 +77,6 @@ function updateBNBPrice() {
     }
 }
 
-function getPriceFloorInfo() {
-    pricefloor.pricefloorBalance.call(function (err, result) {
-        tokens = parseFloat(web3.fromWei(result.toNumber())).toFixed(1)
-        $("#pricefloorTokens").html(numberWithCommas(tokens))
-    });
-
-    pricefloor.pricefloorDividends.call(function (err, result) {
-        dividends = parseFloat(web3.fromWei(result.toNumber())).toFixed(4)
-        $("#pricefloorDivs").html(dividends)
-    });
-}
-
 function convertEthToWei(e) {
     return 1e18 * e
 }
